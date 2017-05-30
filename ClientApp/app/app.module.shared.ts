@@ -9,6 +9,8 @@ import { CounterComponent } from './components/counter/counter.component';
 
 import { VehicleFormComponent} from './components/vehicle-form/vehicle-form.component'
 
+import { MakeService } from './services/make.service';
+
 export const sharedConfig: NgModule = {
     bootstrap: [ AppComponent ],
     declarations: [
@@ -28,5 +30,8 @@ export const sharedConfig: NgModule = {
             { path: 'fetch-data', component: FetchDataComponent },
             { path: '**', redirectTo: 'home' }
         ])
+    ],
+    providers: [ 
+        MakeService 
     ]
 };
