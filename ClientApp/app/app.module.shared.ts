@@ -4,9 +4,8 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './components/app/app.component'
 import { CounterComponent } from './components/counter/counter.component';
-import { FeatureService } from "./services/feature.service";
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
-import { MakeService } from './services/make.service';
+import { VehicleService } from './services/vehicle.service';
 import { HomeComponent } from './components/home/home.component';
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { VehicleFormComponent} from './components/vehicle-form/vehicle-form.component'
@@ -33,7 +32,6 @@ export const sharedConfig: NgModule = {
         ])
     ],
     providers: [ 
-        MakeService,
-        FeatureService
+        VehicleService
     ]
 };

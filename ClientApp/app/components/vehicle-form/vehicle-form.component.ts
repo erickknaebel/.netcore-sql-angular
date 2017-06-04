@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MakeService } from "../../services/make.service";
-import { FeatureService } from "../../services/feature.service";
-
+import { VehicleService } from "../../services/vehicle.service";
 @Component({
     selector: 'vehicle-form',
     templateUrl: './vehicle-form.component.html'
@@ -17,14 +15,13 @@ export class VehicleFormComponent {
     private features: any = [];
 
     constructor(
-        private _makeService: MakeService, 
-        private _featureService: FeatureService) { }
+        private _vehicleService: VehicleService) { }
 
     ngOnInit() {
-        this._makeService.getMakes().subscribe(makes => 
+        this._vehicleService.getMakes().subscribe(makes => 
             this.makes = makes);
 
-        this._featureService.getFeatures().subscribe(features => 
+        this._vehicleService.getFeatures().subscribe(features => 
             this.features = features);
     }
 
