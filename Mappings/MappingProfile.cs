@@ -1,5 +1,6 @@
 using AutoMapper;
 using DealerApp.Models;
+using dotnetcore_sql_angular.Models;
 using dotnetcore_sql_angular.Resources;
 
 namespace dotnetcore_sql_angular.Mappings
@@ -10,6 +11,7 @@ namespace dotnetcore_sql_angular.Mappings
         {
             CreateMap<Make, MakeResource>();
             CreateMap<Model, ModelResource>();
+            CreateMap<Feature, FeatureResource>();
         }
     }
 }
