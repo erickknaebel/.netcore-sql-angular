@@ -1,4 +1,5 @@
 using DealerApp.Models;
+using dotnetcore_sql_angular.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DealerApp.Persistence
@@ -14,5 +15,7 @@ namespace DealerApp.Persistence
          public DbSet<Make> Makes { get; set; }
 
          public DbSet<Model> Models { get; set; }
+
+         public DbSet<Feature> Features { get; set;}
     }
 }

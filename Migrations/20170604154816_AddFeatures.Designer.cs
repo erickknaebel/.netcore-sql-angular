@@ -8,9 +8,10 @@ using DealerApp.Persistence;
 namespace DealerApp.Migrations
 {
     [DbContext(typeof(DealerDbContext))]
-    partial class DealerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170604154816_AddFeatures")]
+    partial class AddFeatures
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")
