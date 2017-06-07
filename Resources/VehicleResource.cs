@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
 using DealerApp.Models;
 using dotnetcore_sql_angular.Models;
 
@@ -15,9 +16,9 @@ namespace dotnetcore_sql_angular.Resources
         
         public bool IsRegistered { get; set; }
 
-
         public DateTime LastUpdate { get; set; }
 
+        [Required]
         public ContactResource Contact { get; set; }
 
         public ICollection<int> Features { get; set; }
