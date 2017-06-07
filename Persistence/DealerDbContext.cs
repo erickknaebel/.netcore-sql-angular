@@ -1,4 +1,5 @@
 using DealerApp.Models;
+using dotnetcore_sql_angular;
 using dotnetcore_sql_angular.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,6 +12,8 @@ namespace DealerApp.Persistence
         public DbSet<Model> Models { get; set; }
 
         public DbSet<Feature> Features { get; set;}
+
+        public DbSet<Vehicle> Vehicles { get; set; }
 
         public DealerDbContext(DbContextOptions<DealerDbContext> options)
         : base(options)

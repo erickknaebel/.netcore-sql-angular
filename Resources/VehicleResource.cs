@@ -15,6 +15,9 @@ namespace dotnetcore_sql_angular.Resources
         
         public bool IsRegistered { get; set; }
 
+
+        public DateTime LastUpdate { get; set; }
+
         public ContactResource Contact { get; set; }
 
         public ICollection<int> Features { get; set; }
